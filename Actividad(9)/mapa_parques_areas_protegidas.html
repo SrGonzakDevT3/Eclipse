@@ -1,0 +1,3255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_182a90283b05098a242aa25d16de1d94 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="
+position: fixed;
+bottom: 35px;
+left: 35px;
+z-index: 9999;
+background-color: white;
+border: 2px solid gray;
+border-radius: 6px;
+padding: 10px;
+font-size: 13px;
+">
+<b>jurisdiccion</b><br>
+<span style="color:blue;">●</span> Nacional<br>
+<span style="color:green;">●</span> Provincial<br>
+<span style="color:orange;">●</span> Municipal<br>
+<span style="color:purple;">●</span> Privado<br>
+<span style="color:gray;">●</span> No disponible
+</div>
+    
+            <div class="folium-map" id="map_182a90283b05098a242aa25d16de1d94" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_182a90283b05098a242aa25d16de1d94 = L.map(
+                "map_182a90283b05098a242aa25d16de1d94",
+                {
+                    center: [-31.48389213836503, -62.094724755377214],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_65298046fca1ab7809356110a6bb0237 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_65298046fca1ab7809356110a6bb0237.addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+            var circle_marker_10a9507d7f8b27d8a7504e1584959d0a = L.circleMarker(
+                [-26.0317796969999, -54.4187433829442],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_e66abc1f80a1abe87000dadcd32e820b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2020f91c9d9cb4f37f3ca942fbf0306d = $(`<div id="html_2020f91c9d9cb4f37f3ca942fbf0306d" style="width: 100.0%; height: 100.0%;"><b>Lote C Huerto Municipal</b><br>tipo: Parque<br>jurisdiccion: Municipal<br>area: 955</div>`)[0];
+                popup_e66abc1f80a1abe87000dadcd32e820b.setContent(html_2020f91c9d9cb4f37f3ca942fbf0306d);
+            
+        
+
+        circle_marker_10a9507d7f8b27d8a7504e1584959d0a.bindPopup(popup_e66abc1f80a1abe87000dadcd32e820b)
+        ;
+
+        
+    
+    
+            circle_marker_10a9507d7f8b27d8a7504e1584959d0a.bindTooltip(
+                `<div>
+                     Lote C Huerto Municipal | Municipal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6eb998a7d68a6ca9a65442eca7e32b75 = L.circleMarker(
+                [-26.4022577179999, -65.680992151561],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_d41c39015c1dcb2f43bf434c50fc643d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2330e04285ccdcd8f6d25df56c28f09 = $(`<div id="html_f2330e04285ccdcd8f6d25df56c28f09" style="width: 100.0%; height: 100.0%;"><b>Cumbres Calchaquíes</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 706222</div>`)[0];
+                popup_d41c39015c1dcb2f43bf434c50fc643d.setContent(html_f2330e04285ccdcd8f6d25df56c28f09);
+            
+        
+
+        circle_marker_6eb998a7d68a6ca9a65442eca7e32b75.bindPopup(popup_d41c39015c1dcb2f43bf434c50fc643d)
+        ;
+
+        
+    
+    
+            circle_marker_6eb998a7d68a6ca9a65442eca7e32b75.bindTooltip(
+                `<div>
+                     Cumbres Calchaquíes | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4d1bfd119291f5b8a3a361fd2fbbbaa = L.circleMarker(
+                [-47.92545844, -72.3175139920585],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_98eaca6b87337f73a537cd3a9e9b96cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbe4034aca60a855db589d9e819e6876 = $(`<div id="html_fbe4034aca60a855db589d9e819e6876" style="width: 100.0%; height: 100.0%;"><b>Perito Moreno</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 953034</div>`)[0];
+                popup_98eaca6b87337f73a537cd3a9e9b96cd.setContent(html_fbe4034aca60a855db589d9e819e6876);
+            
+        
+
+        circle_marker_e4d1bfd119291f5b8a3a361fd2fbbbaa.bindPopup(popup_98eaca6b87337f73a537cd3a9e9b96cd)
+        ;
+
+        
+    
+    
+            circle_marker_e4d1bfd119291f5b8a3a361fd2fbbbaa.bindTooltip(
+                `<div>
+                     Perito Moreno | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_acc274256c76cd996155411fe32039e6 = L.circleMarker(
+                [-50.3372270369999, -69.0171115664486],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_34c0debfbc724e71fb5a240a336847c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe112a189848f01b7b33f28c7c025024 = $(`<div id="html_fe112a189848f01b7b33f28c7c025024" style="width: 100.0%; height: 100.0%;"><b>Monte León</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 562692</div>`)[0];
+                popup_34c0debfbc724e71fb5a240a336847c4.setContent(html_fe112a189848f01b7b33f28c7c025024);
+            
+        
+
+        circle_marker_acc274256c76cd996155411fe32039e6.bindPopup(popup_34c0debfbc724e71fb5a240a336847c4)
+        ;
+
+        
+    
+    
+            circle_marker_acc274256c76cd996155411fe32039e6.bindTooltip(
+                `<div>
+                     Monte León | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_463512cf5b2070c8efa801a8bb2dc04c = L.circleMarker(
+                [-26.8479787945, -59.6551680999174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_b37a0e2fa3b52c6449b8e9562d6d3e34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98edf700dd5eeba7ee3f03fe7dd7cf34 = $(`<div id="html_98edf700dd5eeba7ee3f03fe7dd7cf34" style="width: 100.0%; height: 100.0%;"><b>Chaco</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 149308</div>`)[0];
+                popup_b37a0e2fa3b52c6449b8e9562d6d3e34.setContent(html_98edf700dd5eeba7ee3f03fe7dd7cf34);
+            
+        
+
+        circle_marker_463512cf5b2070c8efa801a8bb2dc04c.bindPopup(popup_b37a0e2fa3b52c6449b8e9562d6d3e34)
+        ;
+
+        
+    
+    
+            circle_marker_463512cf5b2070c8efa801a8bb2dc04c.bindTooltip(
+                `<div>
+                     Chaco | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e77322faeccf74269f70326618b84153 = L.circleMarker(
+                [-27.1564965609999, -54.229564150335],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_acab0730bd2604237b4f98f16ab46720 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d4fd410dd4ca3f4f726a42380737333 = $(`<div id="html_6d4fd410dd4ca3f4f726a42380737333" style="width: 100.0%; height: 100.0%;"><b>Guarambocá</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 21695</div>`)[0];
+                popup_acab0730bd2604237b4f98f16ab46720.setContent(html_6d4fd410dd4ca3f4f726a42380737333);
+            
+        
+
+        circle_marker_e77322faeccf74269f70326618b84153.bindPopup(popup_acab0730bd2604237b4f98f16ab46720)
+        ;
+
+        
+    
+    
+            circle_marker_e77322faeccf74269f70326618b84153.bindTooltip(
+                `<div>
+                     Guarambocá | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b73f897090e7246b64780632983ed90 = L.circleMarker(
+                [-34.8395996099999, -58.1250122845887],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_d2a3ec0d44abe0962f46e6d2faea58e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_417619dc62a2f140f1cf46fe985d3a3c = $(`<div id="html_417619dc62a2f140f1cf46fe985d3a3c" style="width: 100.0%; height: 100.0%;"><b>Pereyra Iraola</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 47122</div>`)[0];
+                popup_d2a3ec0d44abe0962f46e6d2faea58e5.setContent(html_417619dc62a2f140f1cf46fe985d3a3c);
+            
+        
+
+        circle_marker_7b73f897090e7246b64780632983ed90.bindPopup(popup_d2a3ec0d44abe0962f46e6d2faea58e5)
+        ;
+
+        
+    
+    
+            circle_marker_7b73f897090e7246b64780632983ed90.bindTooltip(
+                `<div>
+                     Pereyra Iraola | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49de3a29562b0698774c9dacab26d4da = L.circleMarker(
+                [-27.4023237999999, -55.2031675342914],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_e5e3239c3da5a1d01818d7028bb4a352 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7a1f84d427d440dfc5fe8b38f176c55 = $(`<div id="html_f7a1f84d427d440dfc5fe8b38f176c55" style="width: 100.0%; height: 100.0%;"><b>Paraje los Indios</b><br>tipo: Parque<br>jurisdiccion: Municipal<br>area: 206</div>`)[0];
+                popup_e5e3239c3da5a1d01818d7028bb4a352.setContent(html_f7a1f84d427d440dfc5fe8b38f176c55);
+            
+        
+
+        circle_marker_49de3a29562b0698774c9dacab26d4da.bindPopup(popup_e5e3239c3da5a1d01818d7028bb4a352)
+        ;
+
+        
+    
+    
+            circle_marker_49de3a29562b0698774c9dacab26d4da.bindTooltip(
+                `<div>
+                     Paraje los Indios | Municipal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03b94527a90b9c8d92c045c33ddb3ca6 = L.circleMarker(
+                [-49.5053628405, -67.6119454336033],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_3db9586a6979a840d5e00bd256a1f6d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7953d53b7038abed42792945f84b1adc = $(`<div id="html_7953d53b7038abed42792945f84b1adc" style="width: 100.0%; height: 100.0%;"><b>Makenke</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 724509</div>`)[0];
+                popup_3db9586a6979a840d5e00bd256a1f6d4.setContent(html_7953d53b7038abed42792945f84b1adc);
+            
+        
+
+        circle_marker_03b94527a90b9c8d92c045c33ddb3ca6.bindPopup(popup_3db9586a6979a840d5e00bd256a1f6d4)
+        ;
+
+        
+    
+    
+            circle_marker_03b94527a90b9c8d92c045c33ddb3ca6.bindTooltip(
+                `<div>
+                     Makenke | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d5323692c23c016a1460b272891b56a = L.circleMarker(
+                [-40.8644466025, -71.338415202249],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_dd45c92e47ec2919b1450f3db4c5d40a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_514494b8bb803c0c94d2809792e337f7 = $(`<div id="html_514494b8bb803c0c94d2809792e337f7" style="width: 100.0%; height: 100.0%;"><b>Nahuel Huapi</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 4783064</div>`)[0];
+                popup_dd45c92e47ec2919b1450f3db4c5d40a.setContent(html_514494b8bb803c0c94d2809792e337f7);
+            
+        
+
+        circle_marker_7d5323692c23c016a1460b272891b56a.bindPopup(popup_dd45c92e47ec2919b1450f3db4c5d40a)
+        ;
+
+        
+    
+    
+            circle_marker_7d5323692c23c016a1460b272891b56a.bindTooltip(
+                `<div>
+                     Nahuel Huapi | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59fc1731b24c7733e75374675c59503f = L.circleMarker(
+                [-42.3368312509999, -64.3121959617104],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_a585a206897a010c07f7be63daf41ebd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0647304fa5bf9a0e6f6323bfe9bf8ac4 = $(`<div id="html_0647304fa5bf9a0e6f6323bfe9bf8ac4" style="width: 100.0%; height: 100.0%;"><b>Golfo San José</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 826575</div>`)[0];
+                popup_a585a206897a010c07f7be63daf41ebd.setContent(html_0647304fa5bf9a0e6f6323bfe9bf8ac4);
+            
+        
+
+        circle_marker_59fc1731b24c7733e75374675c59503f.bindPopup(popup_a585a206897a010c07f7be63daf41ebd)
+        ;
+
+        
+    
+    
+            circle_marker_59fc1731b24c7733e75374675c59503f.bindTooltip(
+                `<div>
+                     Golfo San José | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fba071e2f25fa703df907ae0c1d2103b = L.circleMarker(
+                [-45.0795260705, -66.2377199519975],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_57ea7ae38c4e5b963bea7e3029b23e71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76257b4afe51a5606e470371d1353aad = $(`<div id="html_76257b4afe51a5606e470371d1353aad" style="width: 100.0%; height: 100.0%;"><b>Patagonia Austral</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1049129</div>`)[0];
+                popup_57ea7ae38c4e5b963bea7e3029b23e71.setContent(html_76257b4afe51a5606e470371d1353aad);
+            
+        
+
+        circle_marker_fba071e2f25fa703df907ae0c1d2103b.bindPopup(popup_57ea7ae38c4e5b963bea7e3029b23e71)
+        ;
+
+        
+    
+    
+            circle_marker_fba071e2f25fa703df907ae0c1d2103b.bindTooltip(
+                `<div>
+                     Patagonia Austral | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_729b5b71e9fab0fefc21bce4def8db50 = L.circleMarker(
+                [-26.0530102895, -54.35610630755],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_ab2604da6d3076eb2c7638c5f4052ef5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1285f7d86338514f320140a4847cbd2d = $(`<div id="html_1285f7d86338514f320140a4847cbd2d" style="width: 100.0%; height: 100.0%;"><b>Esperanza</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 6709</div>`)[0];
+                popup_ab2604da6d3076eb2c7638c5f4052ef5.setContent(html_1285f7d86338514f320140a4847cbd2d);
+            
+        
+
+        circle_marker_729b5b71e9fab0fefc21bce4def8db50.bindPopup(popup_ab2604da6d3076eb2c7638c5f4052ef5)
+        ;
+
+        
+    
+    
+            circle_marker_729b5b71e9fab0fefc21bce4def8db50.bindTooltip(
+                `<div>
+                     Esperanza | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcbd284ab1017054239e5be8e2180b55 = L.circleMarker(
+                [-27.014471775, -54.9114180444164],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_72350c9c548def0fe358fcf74838e3b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d4c17820fba5a8c073dcde7b4f8cc96 = $(`<div id="html_9d4c17820fba5a8c073dcde7b4f8cc96" style="width: 100.0%; height: 100.0%;"><b>Salto Encantado del Valle del Arroyo Cuñá Pirú</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 132855</div>`)[0];
+                popup_72350c9c548def0fe358fcf74838e3b6.setContent(html_9d4c17820fba5a8c073dcde7b4f8cc96);
+            
+        
+
+        circle_marker_fcbd284ab1017054239e5be8e2180b55.bindPopup(popup_72350c9c548def0fe358fcf74838e3b6)
+        ;
+
+        
+    
+    
+            circle_marker_fcbd284ab1017054239e5be8e2180b55.bindTooltip(
+                `<div>
+                     Salto Encantado del Valle del Arroyo Cuñá Pirú | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b3ddec9435a950f324b16247b0aacde = L.circleMarker(
+                [-25.861159856, -53.8929171001398],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_bba32f34b94a031bd8c59019568f1a18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2436dfc52ed391c6261f6ece668ce54e = $(`<div id="html_2436dfc52ed391c6261f6ece668ce54e" style="width: 100.0%; height: 100.0%;"><b>Guardaparque Horacio Foerster</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 41638</div>`)[0];
+                popup_bba32f34b94a031bd8c59019568f1a18.setContent(html_2436dfc52ed391c6261f6ece668ce54e);
+            
+        
+
+        circle_marker_4b3ddec9435a950f324b16247b0aacde.bindPopup(popup_bba32f34b94a031bd8c59019568f1a18)
+        ;
+
+        
+    
+    
+            circle_marker_4b3ddec9435a950f324b16247b0aacde.bindTooltip(
+                `<div>
+                     Guardaparque Horacio Foerster | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2baa73cbd9629f4f4be75109c32e7bf8 = L.circleMarker(
+                [-26.5208879154999, -53.9941881090043],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_40ac14d2248636a50a147ae2ea540bf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64fd9c67c429628011e60ac170cfdb14 = $(`<div id="html_64fd9c67c429628011e60ac170cfdb14" style="width: 100.0%; height: 100.0%;"><b>Cruce Caballero</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 5368</div>`)[0];
+                popup_40ac14d2248636a50a147ae2ea540bf8.setContent(html_64fd9c67c429628011e60ac170cfdb14);
+            
+        
+
+        circle_marker_2baa73cbd9629f4f4be75109c32e7bf8.bindPopup(popup_40ac14d2248636a50a147ae2ea540bf8)
+        ;
+
+        
+    
+    
+            circle_marker_2baa73cbd9629f4f4be75109c32e7bf8.bindTooltip(
+                `<div>
+                     Cruce Caballero | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd4ea2d3df6526b36bd01059cfcf8f90 = L.circleMarker(
+                [-26.6309552024999, -54.1002943174416],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_be8aa5fb70381bfe54b63166e9aeb8b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1ad5d930413ec7fe66788dce1b15124 = $(`<div id="html_b1ad5d930413ec7fe66788dce1b15124" style="width: 100.0%; height: 100.0%;"><b>de la Araucaria</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 918</div>`)[0];
+                popup_be8aa5fb70381bfe54b63166e9aeb8b5.setContent(html_b1ad5d930413ec7fe66788dce1b15124);
+            
+        
+
+        circle_marker_dd4ea2d3df6526b36bd01059cfcf8f90.bindPopup(popup_be8aa5fb70381bfe54b63166e9aeb8b5)
+        ;
+
+        
+    
+    
+            circle_marker_dd4ea2d3df6526b36bd01059cfcf8f90.bindTooltip(
+                `<div>
+                     de la Araucaria | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e2978d416d4a64827e6976b6313694e = L.circleMarker(
+                [-26.9781503419999, -53.9272730960373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_697709b2aa067bb6a0a44d27dee024cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_450eb43047e24d63d534a21a948bd24c = $(`<div id="html_450eb43047e24d63d534a21a948bd24c" style="width: 100.0%; height: 100.0%;"><b>Esmeralda</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 312752</div>`)[0];
+                popup_697709b2aa067bb6a0a44d27dee024cc.setContent(html_450eb43047e24d63d534a21a948bd24c);
+            
+        
+
+        circle_marker_9e2978d416d4a64827e6976b6313694e.bindPopup(popup_697709b2aa067bb6a0a44d27dee024cc)
+        ;
+
+        
+    
+    
+            circle_marker_9e2978d416d4a64827e6976b6313694e.bindTooltip(
+                `<div>
+                     Esmeralda | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62c9721aa026e9963f5dd4f53433a3cf = L.circleMarker(
+                [-26.0217449934999, -54.6105887790241],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_e3a682a6fba6de2b89e5c1f642fb4316 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62089a14724900a4f99dda4f0cce8d45 = $(`<div id="html_62089a14724900a4f99dda4f0cce8d45" style="width: 100.0%; height: 100.0%;"><b>Yarará</b><br>tipo: Parque<br>jurisdiccion: Municipal<br>area: 104</div>`)[0];
+                popup_e3a682a6fba6de2b89e5c1f642fb4316.setContent(html_62089a14724900a4f99dda4f0cce8d45);
+            
+        
+
+        circle_marker_62c9721aa026e9963f5dd4f53433a3cf.bindPopup(popup_e3a682a6fba6de2b89e5c1f642fb4316)
+        ;
+
+        
+    
+    
+            circle_marker_62c9721aa026e9963f5dd4f53433a3cf.bindTooltip(
+                `<div>
+                     Yarará | Municipal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8cd34233067a98fd74a1ed3c2c9a537e = L.circleMarker(
+                [-25.9467525695, -54.0998861156291],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_fcf822770764a0e684d0483eb0924f0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77ebf77208ba1b1f765711c63ed6e163 = $(`<div id="html_77ebf77208ba1b1f765711c63ed6e163" style="width: 100.0%; height: 100.0%;"><b>Urugua-í</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 850736</div>`)[0];
+                popup_fcf822770764a0e684d0483eb0924f0f.setContent(html_77ebf77208ba1b1f765711c63ed6e163);
+            
+        
+
+        circle_marker_8cd34233067a98fd74a1ed3c2c9a537e.bindPopup(popup_fcf822770764a0e684d0483eb0924f0f)
+        ;
+
+        
+    
+    
+            circle_marker_8cd34233067a98fd74a1ed3c2c9a537e.bindTooltip(
+                `<div>
+                     Urugua-í | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f9d81a913ba540a028631ee8e938556 = L.circleMarker(
+                [-25.8290311645, -54.1911101986761],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_984fe0faa0f758b94f2e6a3a9b38ed2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd13c311ab0b9be38e5716c6e231c8ce = $(`<div id="html_cd13c311ab0b9be38e5716c6e231c8ce" style="width: 100.0%; height: 100.0%;"><b>Uruzú</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 25616</div>`)[0];
+                popup_984fe0faa0f758b94f2e6a3a9b38ed2f.setContent(html_cd13c311ab0b9be38e5716c6e231c8ce);
+            
+        
+
+        circle_marker_0f9d81a913ba540a028631ee8e938556.bindPopup(popup_984fe0faa0f758b94f2e6a3a9b38ed2f)
+        ;
+
+        
+    
+    
+            circle_marker_0f9d81a913ba540a028631ee8e938556.bindTooltip(
+                `<div>
+                     Uruzú | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_456dc90e6d29cb53ae21bd5a2f994b7b = L.circleMarker(
+                [-27.2829629075, -55.5921908437555],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_5d0582b72aea4d2aa3ac63aadb339a03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_532c7c6d661c12e30ba6eff98fd1aeab = $(`<div id="html_532c7c6d661c12e30ba6eff98fd1aeab" style="width: 100.0%; height: 100.0%;"><b>Teyú Cuaré</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 794</div>`)[0];
+                popup_5d0582b72aea4d2aa3ac63aadb339a03.setContent(html_532c7c6d661c12e30ba6eff98fd1aeab);
+            
+        
+
+        circle_marker_456dc90e6d29cb53ae21bd5a2f994b7b.bindPopup(popup_5d0582b72aea4d2aa3ac63aadb339a03)
+        ;
+
+        
+    
+    
+            circle_marker_456dc90e6d29cb53ae21bd5a2f994b7b.bindTooltip(
+                `<div>
+                     Teyú Cuaré | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c079d45693e70f95975a937bf835ec0 = L.circleMarker(
+                [-27.7431759525, -55.5563434967903],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_6072e4bb8b2dc0ccf4276109dc0fee28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf39c96cb28e6ea1c132df1332d62c97 = $(`<div id="html_cf39c96cb28e6ea1c132df1332d62c97" style="width: 100.0%; height: 100.0%;"><b>de la Sierra Ingeniero Raúl Martínez Crovetto</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 10221</div>`)[0];
+                popup_6072e4bb8b2dc0ccf4276109dc0fee28.setContent(html_cf39c96cb28e6ea1c132df1332d62c97);
+            
+        
+
+        circle_marker_2c079d45693e70f95975a937bf835ec0.bindPopup(popup_6072e4bb8b2dc0ccf4276109dc0fee28)
+        ;
+
+        
+    
+    
+            circle_marker_2c079d45693e70f95975a937bf835ec0.bindTooltip(
+                `<div>
+                     de la Sierra Ingeniero Raúl Martínez Crovetto | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0a7bad05b0252c90cda294a0af49624 = L.circleMarker(
+                [-27.408526498, -55.1638270122148],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_59190f18ea5bed9c75a74913ae492356 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bce49b092a5082d396e9dad2455f319 = $(`<div id="html_2bce49b092a5082d396e9dad2455f319" style="width: 100.0%; height: 100.0%;"><b>Amado Bonpland</b><br>tipo: Parque<br>jurisdiccion: Municipal<br>area: 48</div>`)[0];
+                popup_59190f18ea5bed9c75a74913ae492356.setContent(html_2bce49b092a5082d396e9dad2455f319);
+            
+        
+
+        circle_marker_c0a7bad05b0252c90cda294a0af49624.bindPopup(popup_59190f18ea5bed9c75a74913ae492356)
+        ;
+
+        
+    
+    
+            circle_marker_c0a7bad05b0252c90cda294a0af49624.bindTooltip(
+                `<div>
+                     Amado Bonpland | Municipal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e4f50291d6104c8737e5fccf1b1068d = L.circleMarker(
+                [-38.044545131, -62.0220953366427],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_a5b2a85ecccc5f5ca07ddb8cc62eee8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f29c9e1ff2c5aa91579486db408d3dec = $(`<div id="html_f29c9e1ff2c5aa91579486db408d3dec" style="width: 100.0%; height: 100.0%;"><b>Ernesto Tornquist - Sierra de la Ventana</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 70260</div>`)[0];
+                popup_a5b2a85ecccc5f5ca07ddb8cc62eee8d.setContent(html_f29c9e1ff2c5aa91579486db408d3dec);
+            
+        
+
+        circle_marker_6e4f50291d6104c8737e5fccf1b1068d.bindPopup(popup_a5b2a85ecccc5f5ca07ddb8cc62eee8d)
+        ;
+
+        
+    
+    
+            circle_marker_6e4f50291d6104c8737e5fccf1b1068d.bindTooltip(
+                `<div>
+                     Ernesto Tornquist - Sierra de la Ventana | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1675c99afe0ad8f71fc71ce700dfe1c2 = L.circleMarker(
+                [-27.5548263794999, -55.709419562866],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_724f00712999c9e405fb1d20075ea991 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1e8bfbb26fd45222a82c9b37f75c289 = $(`<div id="html_e1e8bfbb26fd45222a82c9b37f75c289" style="width: 100.0%; height: 100.0%;"><b>Cañadón de Profundidad</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 447</div>`)[0];
+                popup_724f00712999c9e405fb1d20075ea991.setContent(html_e1e8bfbb26fd45222a82c9b37f75c289);
+            
+        
+
+        circle_marker_1675c99afe0ad8f71fc71ce700dfe1c2.bindPopup(popup_724f00712999c9e405fb1d20075ea991)
+        ;
+
+        
+    
+    
+            circle_marker_1675c99afe0ad8f71fc71ce700dfe1c2.bindTooltip(
+                `<div>
+                     Cañadón de Profundidad | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b7ffd209de187307978b222ecec406e = L.circleMarker(
+                [-27.6361981729999, -55.7294543492385],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_bd67d3b00b8b85d981b8c27988662a43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd1dcf931b6b98bb0fd27e708fb6ca63 = $(`<div id="html_dd1dcf931b6b98bb0fd27e708fb6ca63" style="width: 100.0%; height: 100.0%;"><b>Fachinal</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 458</div>`)[0];
+                popup_bd67d3b00b8b85d981b8c27988662a43.setContent(html_dd1dcf931b6b98bb0fd27e708fb6ca63);
+            
+        
+
+        circle_marker_9b7ffd209de187307978b222ecec406e.bindPopup(popup_bd67d3b00b8b85d981b8c27988662a43)
+        ;
+
+        
+    
+    
+            circle_marker_9b7ffd209de187307978b222ecec406e.bindTooltip(
+                `<div>
+                     Fachinal | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b081bc2a431e99100043c228a26359a = L.circleMarker(
+                [-37.9352549804999, -65.6041157758969],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_2735cf37adb52dd5ab9d260b200711d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad98e80a0a3a50406500319b0a30df40 = $(`<div id="html_ad98e80a0a3a50406500319b0a30df40" style="width: 100.0%; height: 100.0%;"><b>Lihuel Calel</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 327341</div>`)[0];
+                popup_2735cf37adb52dd5ab9d260b200711d7.setContent(html_ad98e80a0a3a50406500319b0a30df40);
+            
+        
+
+        circle_marker_2b081bc2a431e99100043c228a26359a.bindPopup(popup_2735cf37adb52dd5ab9d260b200711d7)
+        ;
+
+        
+    
+    
+            circle_marker_2b081bc2a431e99100043c228a26359a.bindTooltip(
+                `<div>
+                     Lihuel Calel | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_780c4aa16ed98be7070ad2627e342b9d = L.circleMarker(
+                [-26.4538651394999, -53.8072930991468],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_dedb25c5cc3095b6450390ffda6daf9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cdda2a124d080656399b33dc0e43a64 = $(`<div id="html_6cdda2a124d080656399b33dc0e43a64" style="width: 100.0%; height: 100.0%;"><b>Piñalito</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 37868</div>`)[0];
+                popup_dedb25c5cc3095b6450390ffda6daf9d.setContent(html_6cdda2a124d080656399b33dc0e43a64);
+            
+        
+
+        circle_marker_780c4aa16ed98be7070ad2627e342b9d.bindPopup(popup_dedb25c5cc3095b6450390ffda6daf9d)
+        ;
+
+        
+    
+    
+            circle_marker_780c4aa16ed98be7070ad2627e342b9d.bindTooltip(
+                `<div>
+                     Piñalito | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec0cc6edc7953f21b64299ada020595b = L.circleMarker(
+                [-25.5478853894999, -54.1239121092262],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_a6ddbb4319603442de44e6c855e5b978 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_412b07750000d1960250db03a8b6efdc = $(`<div id="html_412b07750000d1960250db03a8b6efdc" style="width: 100.0%; height: 100.0%;"><b>Grupo de la Isla Grande del Iguazú Superior</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 192</div>`)[0];
+                popup_a6ddbb4319603442de44e6c855e5b978.setContent(html_412b07750000d1960250db03a8b6efdc);
+            
+        
+
+        circle_marker_ec0cc6edc7953f21b64299ada020595b.bindPopup(popup_a6ddbb4319603442de44e6c855e5b978)
+        ;
+
+        
+    
+    
+            circle_marker_ec0cc6edc7953f21b64299ada020595b.bindTooltip(
+                `<div>
+                     Grupo de la Isla Grande del Iguazú Superior | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_035dd5a5cdd8f19808effc2cf3260884 = L.circleMarker(
+                [-25.50206629, -54.1076060972777],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_1b323c633f344f30f18d6d0691919831 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a660a0d52bb3769d1c97eb706ad47024 = $(`<div id="html_a660a0d52bb3769d1c97eb706ad47024" style="width: 100.0%; height: 100.0%;"><b>Ingeniero Agrónomo Roberto Cametti</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 1303</div>`)[0];
+                popup_1b323c633f344f30f18d6d0691919831.setContent(html_a660a0d52bb3769d1c97eb706ad47024);
+            
+        
+
+        circle_marker_035dd5a5cdd8f19808effc2cf3260884.bindPopup(popup_1b323c633f344f30f18d6d0691919831)
+        ;
+
+        
+    
+    
+            circle_marker_035dd5a5cdd8f19808effc2cf3260884.bindTooltip(
+                `<div>
+                     Ingeniero Agrónomo Roberto Cametti | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_36bedfb349b1c30035757d538639cc82 = L.circleMarker(
+                [-25.7043100559999, -54.5309445382912],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_ca2066366d97fe56298b89770dad96cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b8c3557803f7e01529c9b55fb97e8f8 = $(`<div id="html_7b8c3557803f7e01529c9b55fb97e8f8" style="width: 100.0%; height: 100.0%;"><b>Puerto Península</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 69853</div>`)[0];
+                popup_ca2066366d97fe56298b89770dad96cb.setContent(html_7b8c3557803f7e01529c9b55fb97e8f8);
+            
+        
+
+        circle_marker_36bedfb349b1c30035757d538639cc82.bindPopup(popup_ca2066366d97fe56298b89770dad96cb)
+        ;
+
+        
+    
+    
+            circle_marker_36bedfb349b1c30035757d538639cc82.bindTooltip(
+                `<div>
+                     Puerto Península | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_36e316dc312ae7dd7f2a323b97b5f2c2 = L.circleMarker(
+                [-25.4388575945, -61.8172434676966],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_8f965cc06ea754be49db3a399ce17545 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfd4299ba2ca860f3cbb12ed3b5adbd5 = $(`<div id="html_cfd4299ba2ca860f3cbb12ed3b5adbd5" style="width: 100.0%; height: 100.0%;"><b>Loro Hablador</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 190862</div>`)[0];
+                popup_8f965cc06ea754be49db3a399ce17545.setContent(html_cfd4299ba2ca860f3cbb12ed3b5adbd5);
+            
+        
+
+        circle_marker_36e316dc312ae7dd7f2a323b97b5f2c2.bindPopup(popup_8f965cc06ea754be49db3a399ce17545)
+        ;
+
+        
+    
+    
+            circle_marker_36e316dc312ae7dd7f2a323b97b5f2c2.bindTooltip(
+                `<div>
+                     Loro Hablador | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0893e36338ff9fd1b8b15005df693797 = L.circleMarker(
+                [-25.6465600534999, -54.2842373224101],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_4fcc7ad5682ca63bc4c2f30be02b0693 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a037acee76f9b2f7716d91990407ef01 = $(`<div id="html_a037acee76f9b2f7716d91990407ef01" style="width: 100.0%; height: 100.0%;"><b>Iguazú</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 513122</div>`)[0];
+                popup_4fcc7ad5682ca63bc4c2f30be02b0693.setContent(html_a037acee76f9b2f7716d91990407ef01);
+            
+        
+
+        circle_marker_0893e36338ff9fd1b8b15005df693797.bindPopup(popup_4fcc7ad5682ca63bc4c2f30be02b0693)
+        ;
+
+        
+    
+    
+            circle_marker_0893e36338ff9fd1b8b15005df693797.bindTooltip(
+                `<div>
+                     Iguazú | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_115d002dabfe0e702c660f7dbd95b691 = L.circleMarker(
+                [-25.594299071, -54.5769659181938],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_636fcb53995e249cd27ddcce9dd1f178 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f56fa6ffc74fc04342d2f4cf0fe6d61 = $(`<div id="html_2f56fa6ffc74fc04342d2f4cf0fe6d61" style="width: 100.0%; height: 100.0%;"><b>Luis Honorio Rolón</b><br>tipo: Parque<br>jurisdiccion: Municipal<br>area: 134</div>`)[0];
+                popup_636fcb53995e249cd27ddcce9dd1f178.setContent(html_2f56fa6ffc74fc04342d2f4cf0fe6d61);
+            
+        
+
+        circle_marker_115d002dabfe0e702c660f7dbd95b691.bindPopup(popup_636fcb53995e249cd27ddcce9dd1f178)
+        ;
+
+        
+    
+    
+            circle_marker_115d002dabfe0e702c660f7dbd95b691.bindTooltip(
+                `<div>
+                     Luis Honorio Rolón | Municipal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02e818288d0af46fd1f9a374aee6af6b = L.circleMarker(
+                [-25.602309165, -54.1543969183165],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_269b45fb49d72e2686ccb95a53ee90af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19ea70e4186589f5a7d4953fc5535ded = $(`<div id="html_19ea70e4186589f5a7d4953fc5535ded" style="width: 100.0%; height: 100.0%;"><b>Yacuy</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 3361</div>`)[0];
+                popup_269b45fb49d72e2686ccb95a53ee90af.setContent(html_19ea70e4186589f5a7d4953fc5535ded);
+            
+        
+
+        circle_marker_02e818288d0af46fd1f9a374aee6af6b.bindPopup(popup_269b45fb49d72e2686ccb95a53ee90af)
+        ;
+
+        
+    
+    
+            circle_marker_02e818288d0af46fd1f9a374aee6af6b.bindTooltip(
+                `<div>
+                     Yacuy | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ec00cfce4283e0ec2426de1252cbb37 = L.circleMarker(
+                [-31.7439426625, -60.3279641693699],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_91daf9380b17c4e54669c152646f1607 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_554aa5872c3fe1c28f766d0b4b22fe2d = $(`<div id="html_554aa5872c3fe1c28f766d0b4b22fe2d" style="width: 100.0%; height: 100.0%;"><b>Enrique Berduc - Parque General San Martín</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 5639</div>`)[0];
+                popup_91daf9380b17c4e54669c152646f1607.setContent(html_554aa5872c3fe1c28f766d0b4b22fe2d);
+            
+        
+
+        circle_marker_7ec00cfce4283e0ec2426de1252cbb37.bindPopup(popup_91daf9380b17c4e54669c152646f1607)
+        ;
+
+        
+    
+    
+            circle_marker_7ec00cfce4283e0ec2426de1252cbb37.bindTooltip(
+                `<div>
+                     Enrique Berduc - Parque General San Martín | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4edf215808a904539bce123df3417e70 = L.circleMarker(
+                [-32.2754994834999, -60.7043255605843],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_1ea3f2cb2003565b4a9dd5a1c9e4fd67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71563e940c035848b50c5403475cf762 = $(`<div id="html_71563e940c035848b50c5403475cf762" style="width: 100.0%; height: 100.0%;"><b>Islas de Santa Fe</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 35210</div>`)[0];
+                popup_1ea3f2cb2003565b4a9dd5a1c9e4fd67.setContent(html_71563e940c035848b50c5403475cf762);
+            
+        
+
+        circle_marker_4edf215808a904539bce123df3417e70.bindPopup(popup_1ea3f2cb2003565b4a9dd5a1c9e4fd67)
+        ;
+
+        
+    
+    
+            circle_marker_4edf215808a904539bce123df3417e70.bindTooltip(
+                `<div>
+                     Islas de Santa Fe | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0bba9eaea0149606e452e826962e67da = L.circleMarker(
+                [-25.1460201739999, -61.6876243244984],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_6157243aaf311a02067383fd426d557a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3e0fd41a02bb4162824cccb29097e6b = $(`<div id="html_b3e0fd41a02bb4162824cccb29097e6b" style="width: 100.0%; height: 100.0%;"><b>Fuerte Esperanza</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 104911</div>`)[0];
+                popup_6157243aaf311a02067383fd426d557a.setContent(html_b3e0fd41a02bb4162824cccb29097e6b);
+            
+        
+
+        circle_marker_0bba9eaea0149606e452e826962e67da.bindPopup(popup_6157243aaf311a02067383fd426d557a)
+        ;
+
+        
+    
+    
+            circle_marker_0bba9eaea0149606e452e826962e67da.bindTooltip(
+                `<div>
+                     Fuerte Esperanza | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef24fea7f1391e34d78117d34d0594c0 = L.circleMarker(
+                [-31.370377415, -65.4433428235102],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_e5a91246db5320d9f17448e95e29ec77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea9cb2c87a46d542326d646b5002c5a5 = $(`<div id="html_ea9cb2c87a46d542326d646b5002c5a5" style="width: 100.0%; height: 100.0%;"><b>Chancaní</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 50043</div>`)[0];
+                popup_e5a91246db5320d9f17448e95e29ec77.setContent(html_ea9cb2c87a46d542326d646b5002c5a5);
+            
+        
+
+        circle_marker_ef24fea7f1391e34d78117d34d0594c0.bindPopup(popup_e5a91246db5320d9f17448e95e29ec77)
+        ;
+
+        
+    
+    
+            circle_marker_ef24fea7f1391e34d78117d34d0594c0.bindTooltip(
+                `<div>
+                     Chancaní | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df500dc8ffdcf406b981235eb0a4452d = L.circleMarker(
+                [-47.4081079004999, -71.1626713061621],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_26c1615fa41cc605e8bd18393af86336 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab761b5e376e099f9fcbfbfdacf91585 = $(`<div id="html_ab761b5e376e099f9fcbfbfdacf91585" style="width: 100.0%; height: 100.0%;"><b>Patagonia</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 524093</div>`)[0];
+                popup_26c1615fa41cc605e8bd18393af86336.setContent(html_ab761b5e376e099f9fcbfbfdacf91585);
+            
+        
+
+        circle_marker_df500dc8ffdcf406b981235eb0a4452d.bindPopup(popup_26c1615fa41cc605e8bd18393af86336)
+        ;
+
+        
+    
+    
+            circle_marker_df500dc8ffdcf406b981235eb0a4452d.bindTooltip(
+                `<div>
+                     Patagonia | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3bf7006f39b281f3c688b6ff30c2a4c = L.circleMarker(
+                [-27.591269493, -56.6971019010712],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_e72ece7a05550dea90584ec50360c743 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9c95bbdbbdbb6d1fba463f3956ab232 = $(`<div id="html_d9c95bbdbbdbb6d1fba463f3956ab232" style="width: 100.0%; height: 100.0%;"><b>Zanjón de Loreto</b><br>tipo: Parque<br>jurisdiccion: Municipal<br>area: 12119</div>`)[0];
+                popup_e72ece7a05550dea90584ec50360c743.setContent(html_d9c95bbdbbdbb6d1fba463f3956ab232);
+            
+        
+
+        circle_marker_c3bf7006f39b281f3c688b6ff30c2a4c.bindPopup(popup_e72ece7a05550dea90584ec50360c743)
+        ;
+
+        
+    
+    
+            circle_marker_c3bf7006f39b281f3c688b6ff30c2a4c.bindTooltip(
+                `<div>
+                     Zanjón de Loreto | Municipal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_581de0ffca6a6b20edb52595a769a519 = L.circleMarker(
+                [-28.0196689185, -58.0732316401245],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_9f2cb241c72953e28455821099ecdbea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22abb232225786879792b8834a1c93da = $(`<div id="html_22abb232225786879792b8834a1c93da" style="width: 100.0%; height: 100.0%;"><b>Mburucuyá</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 177189</div>`)[0];
+                popup_9f2cb241c72953e28455821099ecdbea.setContent(html_22abb232225786879792b8834a1c93da);
+            
+        
+
+        circle_marker_581de0ffca6a6b20edb52595a769a519.bindPopup(popup_9f2cb241c72953e28455821099ecdbea)
+        ;
+
+        
+    
+    
+            circle_marker_581de0ffca6a6b20edb52595a769a519.bindTooltip(
+                `<div>
+                     Mburucuyá | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cb9bf335b65915978e7bf4d5a1ca07c = L.circleMarker(
+                [-31.226930955, -60.1653413796782],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_9676b5fe2c6a4bf80454177fecf86fa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a172f8317c2d55fb20b968afa82a9a0 = $(`<div id="html_1a172f8317c2d55fb20b968afa82a9a0" style="width: 100.0%; height: 100.0%;"><b>Cayastá</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 3702</div>`)[0];
+                popup_9676b5fe2c6a4bf80454177fecf86fa9.setContent(html_1a172f8317c2d55fb20b968afa82a9a0);
+            
+        
+
+        circle_marker_7cb9bf335b65915978e7bf4d5a1ca07c.bindPopup(popup_9676b5fe2c6a4bf80454177fecf86fa9)
+        ;
+
+        
+    
+    
+            circle_marker_7cb9bf335b65915978e7bf4d5a1ca07c.bindTooltip(
+                `<div>
+                     Cayastá | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6de630b054f6bb086462a03b389dbe26 = L.circleMarker(
+                [-31.2145511199999, -60.1583293079434],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_4c5ec0ccaa75016b773ca85deaa9ef4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f808198ae760e1eb8e96c8c00c47010 = $(`<div id="html_9f808198ae760e1eb8e96c8c00c47010" style="width: 100.0%; height: 100.0%;"><b>Santa Fe la Vieja</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 980</div>`)[0];
+                popup_4c5ec0ccaa75016b773ca85deaa9ef4e.setContent(html_9f808198ae760e1eb8e96c8c00c47010);
+            
+        
+
+        circle_marker_6de630b054f6bb086462a03b389dbe26.bindPopup(popup_4c5ec0ccaa75016b773ca85deaa9ef4e)
+        ;
+
+        
+    
+    
+            circle_marker_6de630b054f6bb086462a03b389dbe26.bindTooltip(
+                `<div>
+                     Santa Fe la Vieja | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa1853718ce4893f2f9dc1a3e66af57e = L.circleMarker(
+                [-26.1902069319999, -60.051841425428],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_6c5b1627a9f36b73b754242d6d373c0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2895b21bf10e73218a01e81ca9bbb666 = $(`<div id="html_2895b21bf10e73218a01e81ca9bbb666" style="width: 100.0%; height: 100.0%;"><b>Pampa del Indio</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 222862</div>`)[0];
+                popup_6c5b1627a9f36b73b754242d6d373c0f.setContent(html_2895b21bf10e73218a01e81ca9bbb666);
+            
+        
+
+        circle_marker_aa1853718ce4893f2f9dc1a3e66af57e.bindPopup(popup_6c5b1627a9f36b73b754242d6d373c0f)
+        ;
+
+        
+    
+    
+            circle_marker_aa1853718ce4893f2f9dc1a3e66af57e.bindTooltip(
+                `<div>
+                     Pampa del Indio | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e23c9566e1d64092b9b5c1b9291055d = L.circleMarker(
+                [-29.88851508, -59.6818017796949],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_ff3d5dd8b74568fc8634995f6c0c0196 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_282447efcd6cc530b05d1a920060a340 = $(`<div id="html_282447efcd6cc530b05d1a920060a340" style="width: 100.0%; height: 100.0%;"><b>Del Medio - Los Caballos</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 16000</div>`)[0];
+                popup_ff3d5dd8b74568fc8634995f6c0c0196.setContent(html_282447efcd6cc530b05d1a920060a340);
+            
+        
+
+        circle_marker_2e23c9566e1d64092b9b5c1b9291055d.bindPopup(popup_ff3d5dd8b74568fc8634995f6c0c0196)
+        ;
+
+        
+    
+    
+            circle_marker_2e23c9566e1d64092b9b5c1b9291055d.bindTooltip(
+                `<div>
+                     Del Medio - Los Caballos | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dac1c086f7c4c742d75e67d0a7b7e3d4 = L.circleMarker(
+                [-25.0034366594999, -61.1100172826643],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_66462c682382d73acdb54f25f5baad0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd9d22d8b7b3097a9d299ecd16ef5489 = $(`<div id="html_dd9d22d8b7b3097a9d299ecd16ef5489" style="width: 100.0%; height: 100.0%;"><b>El Impenetrable</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1278233</div>`)[0];
+                popup_66462c682382d73acdb54f25f5baad0e.setContent(html_dd9d22d8b7b3097a9d299ecd16ef5489);
+            
+        
+
+        circle_marker_dac1c086f7c4c742d75e67d0a7b7e3d4.bindPopup(popup_66462c682382d73acdb54f25f5baad0e)
+        ;
+
+        
+    
+    
+            circle_marker_dac1c086f7c4c742d75e67d0a7b7e3d4.bindTooltip(
+                `<div>
+                     El Impenetrable | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f7c8b861873cf9126878307b3ecb729 = L.circleMarker(
+                [-30.9804704709999, -65.6772083466916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_5d26ff6a4e214b4c9218f455ed4ab2b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95e972fcdc79b334cbeb397b7c52aa36 = $(`<div id="html_95e972fcdc79b334cbeb397b7c52aa36" style="width: 100.0%; height: 100.0%;"><b>Traslasierra</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 278364</div>`)[0];
+                popup_5d26ff6a4e214b4c9218f455ed4ab2b8.setContent(html_95e972fcdc79b334cbeb397b7c52aa36);
+            
+        
+
+        circle_marker_8f7c8b861873cf9126878307b3ecb729.bindPopup(popup_5d26ff6a4e214b4c9218f455ed4ab2b8)
+        ;
+
+        
+    
+    
+            circle_marker_8f7c8b861873cf9126878307b3ecb729.bindTooltip(
+                `<div>
+                     Traslasierra | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46730fbb85cd4b830f8409f5077d93b0 = L.circleMarker(
+                [-26.720306951, -65.3799711369983],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_2c55e280701c947c88af2be9fcd856f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83c1c6b5d987e2fd39fd7cda82fcc086 = $(`<div id="html_83c1c6b5d987e2fd39fd7cda82fcc086" style="width: 100.0%; height: 100.0%;"><b>Sierra de San Javier</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 121282</div>`)[0];
+                popup_2c55e280701c947c88af2be9fcd856f0.setContent(html_83c1c6b5d987e2fd39fd7cda82fcc086);
+            
+        
+
+        circle_marker_46730fbb85cd4b830f8409f5077d93b0.bindPopup(popup_2c55e280701c947c88af2be9fcd856f0)
+        ;
+
+        
+    
+    
+            circle_marker_46730fbb85cd4b830f8409f5077d93b0.bindTooltip(
+                `<div>
+                     Sierra de San Javier | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7b5f7d993132cf3ffe115b1804f41fb = L.circleMarker(
+                [-27.1102646969999, -65.8922270597658],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_9d2a4590c93d3387bea6411a6458df2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_996143f5b0b905779b9490625d2b974e = $(`<div id="html_996143f5b0b905779b9490625d2b974e" style="width: 100.0%; height: 100.0%;"><b>La Florida</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 139621</div>`)[0];
+                popup_9d2a4590c93d3387bea6411a6458df2a.setContent(html_996143f5b0b905779b9490625d2b974e);
+            
+        
+
+        circle_marker_a7b5f7d993132cf3ffe115b1804f41fb.bindPopup(popup_9d2a4590c93d3387bea6411a6458df2a)
+        ;
+
+        
+    
+    
+            circle_marker_a7b5f7d993132cf3ffe115b1804f41fb.bindTooltip(
+                `<div>
+                     La Florida | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8039996ff966e33f6807b36eb866b3a6 = L.circleMarker(
+                [-47.6748980025, -68.2112034576114],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_cf02cfc8ccce49d13174fb3021fc0fc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6417674b0409d3a1813e6f7cb1c58d25 = $(`<div id="html_6417674b0409d3a1813e6f7cb1c58d25" style="width: 100.0%; height: 100.0%;"><b>Bosques Petrificados de Jaramillo</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 634930</div>`)[0];
+                popup_cf02cfc8ccce49d13174fb3021fc0fc3.setContent(html_6417674b0409d3a1813e6f7cb1c58d25);
+            
+        
+
+        circle_marker_8039996ff966e33f6807b36eb866b3a6.bindPopup(popup_cf02cfc8ccce49d13174fb3021fc0fc3)
+        ;
+
+        
+    
+    
+            circle_marker_8039996ff966e33f6807b36eb866b3a6.bindTooltip(
+                `<div>
+                     Bosques Petrificados de Jaramillo | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac40173704e384ad02e4f1806856e99d = L.circleMarker(
+                [-31.6687528439999, -64.7702441390781],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_f7983d3c0bfba6a3207ef800cbfb6972 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cbd36ea5bb4cbcc6fa00f003c943549 = $(`<div id="html_0cbd36ea5bb4cbcc6fa00f003c943549" style="width: 100.0%; height: 100.0%;"><b>Quebrada del Condorito</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 245790</div>`)[0];
+                popup_f7983d3c0bfba6a3207ef800cbfb6972.setContent(html_0cbd36ea5bb4cbcc6fa00f003c943549);
+            
+        
+
+        circle_marker_ac40173704e384ad02e4f1806856e99d.bindPopup(popup_f7983d3c0bfba6a3207ef800cbfb6972)
+        ;
+
+        
+    
+    
+            circle_marker_ac40173704e384ad02e4f1806856e99d.bindTooltip(
+                `<div>
+                     Quebrada del Condorito | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc731da8894353456abb80fb25b611e7 = L.circleMarker(
+                [-49.97723262, -73.402908018618],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_86df9e0dc7b27ddbd514c682b798f20b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_159474e1d06c8b63bf6fd625f08fa2e1 = $(`<div id="html_159474e1d06c8b63bf6fd625f08fa2e1" style="width: 100.0%; height: 100.0%;"><b>Los Glaciares</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 5336408</div>`)[0];
+                popup_86df9e0dc7b27ddbd514c682b798f20b.setContent(html_159474e1d06c8b63bf6fd625f08fa2e1);
+            
+        
+
+        circle_marker_cc731da8894353456abb80fb25b611e7.bindPopup(popup_86df9e0dc7b27ddbd514c682b798f20b)
+        ;
+
+        
+    
+    
+            circle_marker_cc731da8894353456abb80fb25b611e7.bindTooltip(
+                `<div>
+                     Los Glaciares | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c85cdda68dd6a1388a25cfa093f511b0 = L.circleMarker(
+                [-28.4566775629999, -57.7240403669653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_f4788e6b62e54e64940cb6bb5b4f1a4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae319007bf9ee4c22083397821793194 = $(`<div id="html_ae319007bf9ee4c22083397821793194" style="width: 100.0%; height: 100.0%;"><b>Iberá-Núcleo Carambola</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 103123</div>`)[0];
+                popup_f4788e6b62e54e64940cb6bb5b4f1a4a.setContent(html_ae319007bf9ee4c22083397821793194);
+            
+        
+
+        circle_marker_c85cdda68dd6a1388a25cfa093f511b0.bindPopup(popup_f4788e6b62e54e64940cb6bb5b4f1a4a)
+        ;
+
+        
+    
+    
+            circle_marker_c85cdda68dd6a1388a25cfa093f511b0.bindTooltip(
+                `<div>
+                     Iberá-Núcleo Carambola | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68766bc0823b49e9ddc896f6b43347b9 = L.circleMarker(
+                [-28.1199592695, -57.2892271059506],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_ca21c804f974b83044bb12f16d762cd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e1987293f5e78b0c428aefa089cfc8b = $(`<div id="html_9e1987293f5e78b0c428aefa089cfc8b" style="width: 100.0%; height: 100.0%;"><b>Iberá - Núcleo San Nicolás/San Alonso</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1070780</div>`)[0];
+                popup_ca21c804f974b83044bb12f16d762cd3.setContent(html_9e1987293f5e78b0c428aefa089cfc8b);
+            
+        
+
+        circle_marker_68766bc0823b49e9ddc896f6b43347b9.bindPopup(popup_ca21c804f974b83044bb12f16d762cd3)
+        ;
+
+        
+    
+    
+            circle_marker_68766bc0823b49e9ddc896f6b43347b9.bindTooltip(
+                `<div>
+                     Iberá - Núcleo San Nicolás/San Alonso | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77a802027636726c28df93ffe9f74daf = L.circleMarker(
+                [-27.920347458, -56.9384673440787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_de6c3d168ca69c2ba21c8d40cd6acdb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d93a4a0b1719d956f1007d6229c9125e = $(`<div id="html_d93a4a0b1719d956f1007d6229c9125e" style="width: 100.0%; height: 100.0%;"><b>Iberá - Núcleo Cambyretá</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 234818</div>`)[0];
+                popup_de6c3d168ca69c2ba21c8d40cd6acdb0.setContent(html_d93a4a0b1719d956f1007d6229c9125e);
+            
+        
+
+        circle_marker_77a802027636726c28df93ffe9f74daf.bindPopup(popup_de6c3d168ca69c2ba21c8d40cd6acdb0)
+        ;
+
+        
+    
+    
+            circle_marker_77a802027636726c28df93ffe9f74daf.bindTooltip(
+                `<div>
+                     Iberá - Núcleo Cambyretá | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91804cc6a94bbeca0789345fd94439d3 = L.circleMarker(
+                [-54.6600267169999, -68.4770153848728],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_8eaffe20705de71927e52479a9835b2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f07972fa3510a565199ae94e12e9e693 = $(`<div id="html_f07972fa3510a565199ae94e12e9e693" style="width: 100.0%; height: 100.0%;"><b>Tierra del Fuego</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 699878</div>`)[0];
+                popup_8eaffe20705de71927e52479a9835b2f.setContent(html_f07972fa3510a565199ae94e12e9e693);
+            
+        
+
+        circle_marker_91804cc6a94bbeca0789345fd94439d3.bindPopup(popup_8eaffe20705de71927e52479a9835b2f)
+        ;
+
+        
+    
+    
+            circle_marker_91804cc6a94bbeca0789345fd94439d3.bindTooltip(
+                `<div>
+                     Tierra del Fuego | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1ee3cad34be28a76508b8f3700d938b = L.circleMarker(
+                [-32.140995261, -60.6471043294149],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_c83be9111e9f4af65ef0fd995fd7c5e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0b748d8f280e9a5742dfa7a7a60cb95 = $(`<div id="html_c0b748d8f280e9a5742dfa7a7a60cb95" style="width: 100.0%; height: 100.0%;"><b>Pre-Delta</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 26787</div>`)[0];
+                popup_c83be9111e9f4af65ef0fd995fd7c5e8.setContent(html_c0b748d8f280e9a5742dfa7a7a60cb95);
+            
+        
+
+        circle_marker_a1ee3cad34be28a76508b8f3700d938b.bindPopup(popup_c83be9111e9f4af65ef0fd995fd7c5e8)
+        ;
+
+        
+    
+    
+            circle_marker_a1ee3cad34be28a76508b8f3700d938b.bindTooltip(
+                `<div>
+                     Pre-Delta | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_268ef93a3eab7cd297317bcd35fd74f3 = L.circleMarker(
+                [-24.678334376, -64.6163468102867],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_bcf56251f7036df06517691a73bb516a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07bbce7a2feaa58beb5138293528d6f7 = $(`<div id="html_07bbce7a2feaa58beb5138293528d6f7" style="width: 100.0%; height: 100.0%;"><b>El Rey</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 398197</div>`)[0];
+                popup_bcf56251f7036df06517691a73bb516a.setContent(html_07bbce7a2feaa58beb5138293528d6f7);
+            
+        
+
+        circle_marker_268ef93a3eab7cd297317bcd35fd74f3.bindPopup(popup_bcf56251f7036df06517691a73bb516a)
+        ;
+
+        
+    
+    
+            circle_marker_268ef93a3eab7cd297317bcd35fd74f3.bindTooltip(
+                `<div>
+                     El Rey | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f73b96b8d5f7ead3f0cd4793fefa793 = L.circleMarker(
+                [-24.161521407, -65.3097008577346],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_ce905dbe287fb948f16ee6ba5b541048 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fa3f737e6257273316a607f162da64c = $(`<div id="html_6fa3f737e6257273316a607f162da64c" style="width: 100.0%; height: 100.0%;"><b>Barón Carlos María Schuel</b><br>tipo: Parque<br>jurisdiccion: Municipal<br>area: 155</div>`)[0];
+                popup_ce905dbe287fb948f16ee6ba5b541048.setContent(html_6fa3f737e6257273316a607f162da64c);
+            
+        
+
+        circle_marker_2f73b96b8d5f7ead3f0cd4793fefa793.bindPopup(popup_ce905dbe287fb948f16ee6ba5b541048)
+        ;
+
+        
+    
+    
+            circle_marker_2f73b96b8d5f7ead3f0cd4793fefa793.bindTooltip(
+                `<div>
+                     Barón Carlos María Schuel | Municipal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e350c2a665a6476de4aab024134b390 = L.circleMarker(
+                [-31.877126215, -58.2629895548352],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_9b7a7bc7e98face2fc3aceecbedb1022 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9af9ef3906671d5e3b98ae7bb287ec2e = $(`<div id="html_9af9ef3906671d5e3b98ae7bb287ec2e" style="width: 100.0%; height: 100.0%;"><b>El Palmar</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 84978</div>`)[0];
+                popup_9b7a7bc7e98face2fc3aceecbedb1022.setContent(html_9af9ef3906671d5e3b98ae7bb287ec2e);
+            
+        
+
+        circle_marker_6e350c2a665a6476de4aab024134b390.bindPopup(popup_9b7a7bc7e98face2fc3aceecbedb1022)
+        ;
+
+        
+    
+    
+            circle_marker_6e350c2a665a6476de4aab024134b390.bindTooltip(
+                `<div>
+                     El Palmar | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a76f59d22e79ec8c9ecc962b0dd66753 = L.circleMarker(
+                [-30.0787023745, -67.9843234980188],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_f01eba965886fd0423779954319685c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22e4cb6d8c77b35b6cb9f54f2e6384c7 = $(`<div id="html_22e4cb6d8c77b35b6cb9f54f2e6384c7" style="width: 100.0%; height: 100.0%;"><b>Ischigualasto</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 637493</div>`)[0];
+                popup_f01eba965886fd0423779954319685c3.setContent(html_22e4cb6d8c77b35b6cb9f54f2e6384c7);
+            
+        
+
+        circle_marker_a76f59d22e79ec8c9ecc962b0dd66753.bindPopup(popup_f01eba965886fd0423779954319685c3)
+        ;
+
+        
+    
+    
+            circle_marker_a76f59d22e79ec8c9ecc962b0dd66753.bindTooltip(
+                `<div>
+                     Ischigualasto | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c6fbf56a2bca9da25ee7bdecd0761ca = L.circleMarker(
+                [-33.1086982, -69.824527013112],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_2eefdf1564e06595a87f8074fd6f2fbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e00639e45e77879a126fd13aef1764ac = $(`<div id="html_e00639e45e77879a126fd13aef1764ac" style="width: 100.0%; height: 100.0%;"><b>Volcán Tupungato</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 1853878</div>`)[0];
+                popup_2eefdf1564e06595a87f8074fd6f2fbf.setContent(html_e00639e45e77879a126fd13aef1764ac);
+            
+        
+
+        circle_marker_8c6fbf56a2bca9da25ee7bdecd0761ca.bindPopup(popup_2eefdf1564e06595a87f8074fd6f2fbf)
+        ;
+
+        
+    
+    
+            circle_marker_8c6fbf56a2bca9da25ee7bdecd0761ca.bindTooltip(
+                `<div>
+                     Volcán Tupungato | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8d0f1311be3465028a81b029ef8a757 = L.circleMarker(
+                [-37.8386807495, -71.0370573200206],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_56da2c321ab54b3ac5d7bbdda0030558 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_485caedbf35959ebb617622e18493126 = $(`<div id="html_485caedbf35959ebb617622e18493126" style="width: 100.0%; height: 100.0%;"><b>Copahue - Caviahue</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 290362</div>`)[0];
+                popup_56da2c321ab54b3ac5d7bbdda0030558.setContent(html_485caedbf35959ebb617622e18493126);
+            
+        
+
+        circle_marker_c8d0f1311be3465028a81b029ef8a757.bindPopup(popup_56da2c321ab54b3ac5d7bbdda0030558)
+        ;
+
+        
+    
+    
+            circle_marker_c8d0f1311be3465028a81b029ef8a757.bindTooltip(
+                `<div>
+                     Copahue - Caviahue | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96c7190dd071895d5b5b1aa995370c6b = L.circleMarker(
+                [-31.5424108369999, -68.6990188666553],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_913362fd22ac7e2a09ffa7c10016dea8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1da09754fb00b6be8c070c0f1b3bfcd0 = $(`<div id="html_1da09754fb00b6be8c070c0f1b3bfcd0" style="width: 100.0%; height: 100.0%;"><b>Presidente Sarmiento</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 9195</div>`)[0];
+                popup_913362fd22ac7e2a09ffa7c10016dea8.setContent(html_1da09754fb00b6be8c070c0f1b3bfcd0);
+            
+        
+
+        circle_marker_96c7190dd071895d5b5b1aa995370c6b.bindPopup(popup_913362fd22ac7e2a09ffa7c10016dea8)
+        ;
+
+        
+    
+    
+            circle_marker_96c7190dd071895d5b5b1aa995370c6b.bindTooltip(
+                `<div>
+                     Presidente Sarmiento | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_daf618189b1bbc8e20ddd50cfc93a74d = L.circleMarker(
+                [-31.4479486374999, -68.6809171864632],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_a3ea6f69a06c2e7529b54eb94ac9a841 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d75f4efa9ab7729af1e035d39a483a4 = $(`<div id="html_0d75f4efa9ab7729af1e035d39a483a4" style="width: 100.0%; height: 100.0%;"><b>Afloramientos Limo arcillosos</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 6551</div>`)[0];
+                popup_a3ea6f69a06c2e7529b54eb94ac9a841.setContent(html_0d75f4efa9ab7729af1e035d39a483a4);
+            
+        
+
+        circle_marker_daf618189b1bbc8e20ddd50cfc93a74d.bindPopup(popup_a3ea6f69a06c2e7529b54eb94ac9a841)
+        ;
+
+        
+    
+    
+            circle_marker_daf618189b1bbc8e20ddd50cfc93a74d.bindTooltip(
+                `<div>
+                     Afloramientos Limo arcillosos | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b649f2385efd514f773809656e6334ae = L.circleMarker(
+                [-31.454668509, -68.6147056671092],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_ccc9207b20452fce21db25cf7e23b7ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49ed1ab48a972f0298725153c816a0d9 = $(`<div id="html_49ed1ab48a972f0298725153c816a0d9" style="width: 100.0%; height: 100.0%;"><b>Loma de las Tapias</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 55816</div>`)[0];
+                popup_ccc9207b20452fce21db25cf7e23b7ff.setContent(html_49ed1ab48a972f0298725153c816a0d9);
+            
+        
+
+        circle_marker_b649f2385efd514f773809656e6334ae.bindPopup(popup_ccc9207b20452fce21db25cf7e23b7ff)
+        ;
+
+        
+    
+    
+            circle_marker_b649f2385efd514f773809656e6334ae.bindTooltip(
+                `<div>
+                     Loma de las Tapias | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_674b2afca9d692fdb4cc5cb218b4bd4e = L.circleMarker(
+                [-29.8906666984999, -67.8730941705807],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_772df11b2c9cebfea52fb44bd185d502 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_011e31438dec2121ddf95081184958f6 = $(`<div id="html_011e31438dec2121ddf95081184958f6" style="width: 100.0%; height: 100.0%;"><b>Talampaya</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 2132167</div>`)[0];
+                popup_772df11b2c9cebfea52fb44bd185d502.setContent(html_011e31438dec2121ddf95081184958f6);
+            
+        
+
+        circle_marker_674b2afca9d692fdb4cc5cb218b4bd4e.bindPopup(popup_772df11b2c9cebfea52fb44bd185d502)
+        ;
+
+        
+    
+    
+            circle_marker_674b2afca9d692fdb4cc5cb218b4bd4e.bindTooltip(
+                `<div>
+                     Talampaya | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60dc7f8037e53c19fb727070c4c26da8 = L.circleMarker(
+                [-31.9021894209999, -69.2517464785476],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_b64881636119c7343905929f9c4f8b7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a3518ae0132cf2b0e99b9898c27d66c = $(`<div id="html_3a3518ae0132cf2b0e99b9898c27d66c" style="width: 100.0%; height: 100.0%;"><b>El Leoncito</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 902265</div>`)[0];
+                popup_b64881636119c7343905929f9c4f8b7c.setContent(html_3a3518ae0132cf2b0e99b9898c27d66c);
+            
+        
+
+        circle_marker_60dc7f8037e53c19fb727070c4c26da8.bindPopup(popup_b64881636119c7343905929f9c4f8b7c)
+        ;
+
+        
+    
+    
+            circle_marker_60dc7f8037e53c19fb727070c4c26da8.bindTooltip(
+                `<div>
+                     El Leoncito | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91562ad272a6bed9fc3084be0b15e67e = L.circleMarker(
+                [-25.2984937969999, -65.9150745485982],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_e806c41c68e75c0850be1bf248cf2590 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78fb4d3d2183632a3f8ca04c93f620a3 = $(`<div id="html_78fb4d3d2183632a3f8ca04c93f620a3" style="width: 100.0%; height: 100.0%;"><b>Los Cardones</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 646695</div>`)[0];
+                popup_e806c41c68e75c0850be1bf248cf2590.setContent(html_78fb4d3d2183632a3f8ca04c93f620a3);
+            
+        
+
+        circle_marker_91562ad272a6bed9fc3084be0b15e67e.bindPopup(popup_e806c41c68e75c0850be1bf248cf2590)
+        ;
+
+        
+    
+    
+            circle_marker_91562ad272a6bed9fc3084be0b15e67e.bindTooltip(
+                `<div>
+                     Los Cardones | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a2a0f3556051b5af242ac1d46a7f8d9 = L.circleMarker(
+                [-23.6084432669999, -64.8166046243721],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_824e01c93d27e61a7b62d737d3eb5dbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c75bd7f29df7c4ab71961fcba94a39a7 = $(`<div id="html_c75bd7f29df7c4ab71961fcba94a39a7" style="width: 100.0%; height: 100.0%;"><b>Calilegua</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 773152</div>`)[0];
+                popup_824e01c93d27e61a7b62d737d3eb5dbb.setContent(html_c75bd7f29df7c4ab71961fcba94a39a7);
+            
+        
+
+        circle_marker_4a2a0f3556051b5af242ac1d46a7f8d9.bindPopup(popup_824e01c93d27e61a7b62d737d3eb5dbb)
+        ;
+
+        
+    
+    
+            circle_marker_4a2a0f3556051b5af242ac1d46a7f8d9.bindTooltip(
+                `<div>
+                     Calilegua | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c34d53ca5380c54c69d5ac233f4a0c1e = L.circleMarker(
+                [-22.7981754404999, -64.4868541723773],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_c26c46568e3d1cf3b42b8b197a30aa7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df74b0adaf81eb837fbbba9a8a2b6c8a = $(`<div id="html_df74b0adaf81eb837fbbba9a8a2b6c8a" style="width: 100.0%; height: 100.0%;"><b>Laguna Pintascayo</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 158109</div>`)[0];
+                popup_c26c46568e3d1cf3b42b8b197a30aa7a.setContent(html_df74b0adaf81eb837fbbba9a8a2b6c8a);
+            
+        
+
+        circle_marker_c34d53ca5380c54c69d5ac233f4a0c1e.bindPopup(popup_c26c46568e3d1cf3b42b8b197a30aa7a)
+        ;
+
+        
+    
+    
+            circle_marker_c34d53ca5380c54c69d5ac233f4a0c1e.bindTooltip(
+                `<div>
+                     Laguna Pintascayo | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8329814375328d2b573a2db8bd80570 = L.circleMarker(
+                [-24.1099210739999, -65.4476866658739],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_af6b28c7823567019be4f28b5e44e6a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_600eaa75286e55bd500c1708da3201eb = $(`<div id="html_600eaa75286e55bd500c1708da3201eb" style="width: 100.0%; height: 100.0%;"><b>Potrero de Yala</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 44606</div>`)[0];
+                popup_af6b28c7823567019be4f28b5e44e6a1.setContent(html_600eaa75286e55bd500c1708da3201eb);
+            
+        
+
+        circle_marker_a8329814375328d2b573a2db8bd80570.bindPopup(popup_af6b28c7823567019be4f28b5e44e6a1)
+        ;
+
+        
+    
+    
+            circle_marker_a8329814375328d2b573a2db8bd80570.bindTooltip(
+                `<div>
+                     Potrero de Yala | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c1fa597af611cc16c31d13a5e744c7a = L.circleMarker(
+                [-31.13037777, -67.6079896561001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_d62bb5fac76db84d04c89a24ffb334f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8e3e1a601f2a09527941fd7bfba10d6 = $(`<div id="html_b8e3e1a601f2a09527941fd7bfba10d6" style="width: 100.0%; height: 100.0%;"><b>Valle Fértil</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 8039778</div>`)[0];
+                popup_d62bb5fac76db84d04c89a24ffb334f0.setContent(html_b8e3e1a601f2a09527941fd7bfba10d6);
+            
+        
+
+        circle_marker_9c1fa597af611cc16c31d13a5e744c7a.bindPopup(popup_d62bb5fac76db84d04c89a24ffb334f0)
+        ;
+
+        
+    
+    
+            circle_marker_9c1fa597af611cc16c31d13a5e744c7a.bindTooltip(
+                `<div>
+                     Valle Fértil | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00a47b08865992b3c6de3ccda5917224 = L.circleMarker(
+                [-33.020522561, -69.4298096357904],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_1c74645693cacc8cc504980193e83628 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_346705ae133dfbd5849a9582b2b46bed = $(`<div id="html_346705ae133dfbd5849a9582b2b46bed" style="width: 100.0%; height: 100.0%;"><b>Cordon del Plata</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 1753389</div>`)[0];
+                popup_1c74645693cacc8cc504980193e83628.setContent(html_346705ae133dfbd5849a9582b2b46bed);
+            
+        
+
+        circle_marker_00a47b08865992b3c6de3ccda5917224.bindPopup(popup_1c74645693cacc8cc504980193e83628)
+        ;
+
+        
+    
+    
+            circle_marker_00a47b08865992b3c6de3ccda5917224.bindTooltip(
+                `<div>
+                     Cordon del Plata | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bedee6a4ad6ee8f3553ca4035524d7d2 = L.circleMarker(
+                [-22.5874355855, -64.6341171343303],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_d6176a79b60b40df0268d3218999072f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fee660c520ca77686847a7fd86a64141 = $(`<div id="html_fee660c520ca77686847a7fd86a64141" style="width: 100.0%; height: 100.0%;"><b>Baritú</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 682349</div>`)[0];
+                popup_d6176a79b60b40df0268d3218999072f.setContent(html_fee660c520ca77686847a7fd86a64141);
+            
+        
+
+        circle_marker_bedee6a4ad6ee8f3553ca4035524d7d2.bindPopup(popup_d6176a79b60b40df0268d3218999072f)
+        ;
+
+        
+    
+    
+            circle_marker_bedee6a4ad6ee8f3553ca4035524d7d2.bindTooltip(
+                `<div>
+                     Baritú | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eba963370b299d4893ea9122db262729 = L.circleMarker(
+                [-40.8250961705, -71.6287248462203],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_ff785dfded93341e57001f6b16f104d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e18dce3ac41dced4499e43c82b9f8c7b = $(`<div id="html_e18dce3ac41dced4499e43c82b9f8c7b" style="width: 100.0%; height: 100.0%;"><b>Los Arrayanes</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 17856</div>`)[0];
+                popup_ff785dfded93341e57001f6b16f104d7.setContent(html_e18dce3ac41dced4499e43c82b9f8c7b);
+            
+        
+
+        circle_marker_eba963370b299d4893ea9122db262729.bindPopup(popup_ff785dfded93341e57001f6b16f104d7)
+        ;
+
+        
+    
+    
+            circle_marker_eba963370b299d4893ea9122db262729.bindTooltip(
+                `<div>
+                     Los Arrayanes | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e454e9d20af4174efff3f7197505863e = L.circleMarker(
+                [-32.5664020835, -67.1465968860913],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_0cff3a68c2b7a31f9763b631eeb86cfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57fd5183c702ce68eb0e717df91e5a9b = $(`<div id="html_57fd5183c702ce68eb0e717df91e5a9b" style="width: 100.0%; height: 100.0%;"><b>Sierra de las Quijadas</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 745001</div>`)[0];
+                popup_0cff3a68c2b7a31f9763b631eeb86cfd.setContent(html_57fd5183c702ce68eb0e717df91e5a9b);
+            
+        
+
+        circle_marker_e454e9d20af4174efff3f7197505863e.bindPopup(popup_0cff3a68c2b7a31f9763b631eeb86cfd)
+        ;
+
+        
+    
+    
+            circle_marker_e454e9d20af4174efff3f7197505863e.bindTooltip(
+                `<div>
+                     Sierra de las Quijadas | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6debcd626094c77462cd0fd4c4dc736b = L.circleMarker(
+                [-42.2630342619999, -71.8687560885585],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_0c73c0ceb2faa70fa5ec0e9b61fa599b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04c3345365a6ad48dbd14b93b508acc6 = $(`<div id="html_04c3345365a6ad48dbd14b93b508acc6" style="width: 100.0%; height: 100.0%;"><b>Río Turbio</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 713446</div>`)[0];
+                popup_0c73c0ceb2faa70fa5ec0e9b61fa599b.setContent(html_04c3345365a6ad48dbd14b93b508acc6);
+            
+        
+
+        circle_marker_6debcd626094c77462cd0fd4c4dc736b.bindPopup(popup_0c73c0ceb2faa70fa5ec0e9b61fa599b)
+        ;
+
+        
+    
+    
+            circle_marker_6debcd626094c77462cd0fd4c4dc736b.bindTooltip(
+                `<div>
+                     Río Turbio | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3d8517aee5a93d8bc2955b7254dd55f = L.circleMarker(
+                [-39.573103244, -71.2232991005023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_433f5f2336d67e17648652f3673e1d56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aca5f6656e4f4fc96127bca6e18ebcce = $(`<div id="html_aca5f6656e4f4fc96127bca6e18ebcce" style="width: 100.0%; height: 100.0%;"><b>Lanín</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 2182554</div>`)[0];
+                popup_433f5f2336d67e17648652f3673e1d56.setContent(html_aca5f6656e4f4fc96127bca6e18ebcce);
+            
+        
+
+        circle_marker_d3d8517aee5a93d8bc2955b7254dd55f.bindPopup(popup_433f5f2336d67e17648652f3673e1d56)
+        ;
+
+        
+    
+    
+            circle_marker_d3d8517aee5a93d8bc2955b7254dd55f.bindTooltip(
+                `<div>
+                     Lanín | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8fc90003102653a8c33f3511a432ec56 = L.circleMarker(
+                [-27.1544753974999, -53.9072109318872],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_188d55026ee53ff1ba05e00f77f18cfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2e62ff38a342f3a7835ec645eed1218 = $(`<div id="html_d2e62ff38a342f3a7835ec645eed1218" style="width: 100.0%; height: 100.0%;"><b>Moconá</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 10095</div>`)[0];
+                popup_188d55026ee53ff1ba05e00f77f18cfe.setContent(html_d2e62ff38a342f3a7835ec645eed1218);
+            
+        
+
+        circle_marker_8fc90003102653a8c33f3511a432ec56.bindPopup(popup_188d55026ee53ff1ba05e00f77f18cfe)
+        ;
+
+        
+    
+    
+            circle_marker_8fc90003102653a8c33f3511a432ec56.bindTooltip(
+                `<div>
+                     Moconá | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e3ea447044268c7c3d04cbec1b4feae = L.circleMarker(
+                [-26.9922317559999, -65.7895345143756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_0a40ecae48bf8db1cd6c8bab27293eb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b233705867af03dc6e27b3755a9b31b = $(`<div id="html_4b233705867af03dc6e27b3755a9b31b" style="width: 100.0%; height: 100.0%;"><b>Aconquija</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1250357</div>`)[0];
+                popup_0a40ecae48bf8db1cd6c8bab27293eb0.setContent(html_4b233705867af03dc6e27b3755a9b31b);
+            
+        
+
+        circle_marker_5e3ea447044268c7c3d04cbec1b4feae.bindPopup(popup_0a40ecae48bf8db1cd6c8bab27293eb0)
+        ;
+
+        
+    
+    
+            circle_marker_5e3ea447044268c7c3d04cbec1b4feae.bindTooltip(
+                `<div>
+                     Aconquija | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ebabd15d0ee10baa56f6511483eb6b68 = L.circleMarker(
+                [-25.7878582764999, -61.8767736100278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_279190e116e6e418420b03fa5eb3d0f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eac835a2ea918f7f05e4f6f36b80770 = $(`<div id="html_0eac835a2ea918f7f05e4f6f36b80770" style="width: 100.0%; height: 100.0%;"><b>Copo</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1966112</div>`)[0];
+                popup_279190e116e6e418420b03fa5eb3d0f0.setContent(html_0eac835a2ea918f7f05e4f6f36b80770);
+            
+        
+
+        circle_marker_ebabd15d0ee10baa56f6511483eb6b68.bindPopup(popup_279190e116e6e418420b03fa5eb3d0f0)
+        ;
+
+        
+    
+    
+            circle_marker_ebabd15d0ee10baa56f6511483eb6b68.bindTooltip(
+                `<div>
+                     Copo | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_664f38814878f1939647e304e88b314e = L.circleMarker(
+                [-36.357916389, -56.874839035732],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_7a859238da48c4c6f55f43960849b922 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7aac381df7d33c2b7567396099ad382f = $(`<div id="html_7aac381df7d33c2b7567396099ad382f" style="width: 100.0%; height: 100.0%;"><b>Campos del Tuyú</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 30485</div>`)[0];
+                popup_7a859238da48c4c6f55f43960849b922.setContent(html_7aac381df7d33c2b7567396099ad382f);
+            
+        
+
+        circle_marker_664f38814878f1939647e304e88b314e.bindPopup(popup_7a859238da48c4c6f55f43960849b922)
+        ;
+
+        
+    
+    
+            circle_marker_664f38814878f1939647e304e88b314e.bindTooltip(
+                `<div>
+                     Campos del Tuyú | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ba64f9a16d722346070a82ec3a10950 = L.circleMarker(
+                [-34.2366142849999, -58.8834642859808],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_d99e38725e671784f0e1bb7715561992 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19f89ad6306c178d5f0353fe725b14de = $(`<div id="html_19f89ad6306c178d5f0353fe725b14de" style="width: 100.0%; height: 100.0%;"><b>Ciervo de los Pantanos</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 56098</div>`)[0];
+                popup_d99e38725e671784f0e1bb7715561992.setContent(html_19f89ad6306c178d5f0353fe725b14de);
+            
+        
+
+        circle_marker_3ba64f9a16d722346070a82ec3a10950.bindPopup(popup_d99e38725e671784f0e1bb7715561992)
+        ;
+
+        
+    
+    
+            circle_marker_3ba64f9a16d722346070a82ec3a10950.bindTooltip(
+                `<div>
+                     Ciervo de los Pantanos | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8fd63432aebaf3b20d934f8ed19816a2 = L.circleMarker(
+                [-28.2748196094999, -57.0526107622004],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_69e1f7a7a81d8bf33c89fbd2fa9f8434 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4bb8d35d21eda35475ee77a18df6bb3 = $(`<div id="html_e4bb8d35d21eda35475ee77a18df6bb3" style="width: 100.0%; height: 100.0%;"><b>Iberá</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 10687229</div>`)[0];
+                popup_69e1f7a7a81d8bf33c89fbd2fa9f8434.setContent(html_e4bb8d35d21eda35475ee77a18df6bb3);
+            
+        
+
+        circle_marker_8fd63432aebaf3b20d934f8ed19816a2.bindPopup(popup_69e1f7a7a81d8bf33c89fbd2fa9f8434)
+        ;
+
+        
+    
+    
+            circle_marker_8fd63432aebaf3b20d934f8ed19816a2.bindTooltip(
+                `<div>
+                     Iberá | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78efb9a25f70c4fa358bd97f1cdff99a = L.circleMarker(
+                [-42.8426852895, -71.8757851536086],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_3c1eb4603c41a33b57d11b9acb6aa13c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09ac203008d52d390ccfdc91ff158b34 = $(`<div id="html_09ac203008d52d390ccfdc91ff158b34" style="width: 100.0%; height: 100.0%;"><b>Los Alerces</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1885277</div>`)[0];
+                popup_3c1eb4603c41a33b57d11b9acb6aa13c.setContent(html_09ac203008d52d390ccfdc91ff158b34);
+            
+        
+
+        circle_marker_78efb9a25f70c4fa358bd97f1cdff99a.bindPopup(popup_3c1eb4603c41a33b57d11b9acb6aa13c)
+        ;
+
+        
+    
+    
+            circle_marker_78efb9a25f70c4fa358bd97f1cdff99a.bindTooltip(
+                `<div>
+                     Los Alerces | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f45d7084b464f4c1f533e0dfe91f2d15 = L.circleMarker(
+                [-50.4136597995, -72.8555663645163],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_9b89204897e83dc3b2c980e38e20adf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c47662a4c64204bf5dd30e3cb1f7050 = $(`<div id="html_6c47662a4c64204bf5dd30e3cb1f7050" style="width: 100.0%; height: 100.0%;"><b>Península de Magallanes</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 454793</div>`)[0];
+                popup_9b89204897e83dc3b2c980e38e20adf8.setContent(html_6c47662a4c64204bf5dd30e3cb1f7050);
+            
+        
+
+        circle_marker_f45d7084b464f4c1f533e0dfe91f2d15.bindPopup(popup_9b89204897e83dc3b2c980e38e20adf8)
+        ;
+
+        
+    
+    
+            circle_marker_f45d7084b464f4c1f533e0dfe91f2d15.bindTooltip(
+                `<div>
+                     Península de Magallanes | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed2441fbee31ec45b504460aa0d7fc44 = L.circleMarker(
+                [-28.6377561589999, -57.341252846461],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_d7c3e7f19c36b334f02d4868e85f09c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e34bda8c3030fcd51b3e1cd25cf9e841 = $(`<div id="html_e34bda8c3030fcd51b3e1cd25cf9e841" style="width: 100.0%; height: 100.0%;"><b>Iberá-Rincón del Socorro/Iberá</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 312879</div>`)[0];
+                popup_d7c3e7f19c36b334f02d4868e85f09c0.setContent(html_e34bda8c3030fcd51b3e1cd25cf9e841);
+            
+        
+
+        circle_marker_ed2441fbee31ec45b504460aa0d7fc44.bindPopup(popup_d7c3e7f19c36b334f02d4868e85f09c0)
+        ;
+
+        
+    
+    
+            circle_marker_ed2441fbee31ec45b504460aa0d7fc44.bindTooltip(
+                `<div>
+                     Iberá-Rincón del Socorro/Iberá | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce5e21efb68a8016e0f906083518080f = L.circleMarker(
+                [-29.2592787315, -69.2788189705662],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_6943fe22c0f1541e122eb875ebc256de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_539ccde9ff21fb78151cd5cc5e6bf213 = $(`<div id="html_539ccde9ff21fb78151cd5cc5e6bf213" style="width: 100.0%; height: 100.0%;"><b>San Guillermo</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1650043</div>`)[0];
+                popup_6943fe22c0f1541e122eb875ebc256de.setContent(html_539ccde9ff21fb78151cd5cc5e6bf213);
+            
+        
+
+        circle_marker_ce5e21efb68a8016e0f906083518080f.bindPopup(popup_6943fe22c0f1541e122eb875ebc256de)
+        ;
+
+        
+    
+    
+            circle_marker_ce5e21efb68a8016e0f906083518080f.bindTooltip(
+                `<div>
+                     San Guillermo | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb750372ec12ff111967b8d38849bc03 = L.circleMarker(
+                [-32.6759218246824, -69.9453947584146],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_39464a84314809b3e36fa418791a3d66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf6d744788432fd2f538f48a4a3a4678 = $(`<div id="html_bf6d744788432fd2f538f48a4a3a4678" style="width: 100.0%; height: 100.0%;"><b>Aconcagua</b><br>tipo: Parque<br>jurisdiccion: Provincial<br>area: 657119</div>`)[0];
+                popup_39464a84314809b3e36fa418791a3d66.setContent(html_bf6d744788432fd2f538f48a4a3a4678);
+            
+        
+
+        circle_marker_fb750372ec12ff111967b8d38849bc03.bindPopup(popup_39464a84314809b3e36fa418791a3d66)
+        ;
+
+        
+    
+    
+            circle_marker_fb750372ec12ff111967b8d38849bc03.bindTooltip(
+                `<div>
+                     Aconcagua | Provincial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08505f703f0a77751a0649d1ddbe93f2 = L.circleMarker(
+                [-30.705935793, -62.5977628421137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_5710f4712624e55b6003b782ba5e4b44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9aa8a6f93a565a05cfb847f38eba164d = $(`<div id="html_9aa8a6f93a565a05cfb847f38eba164d" style="width: 100.0%; height: 100.0%;"><b>Ansenuza</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 1776194</div>`)[0];
+                popup_5710f4712624e55b6003b782ba5e4b44.setContent(html_9aa8a6f93a565a05cfb847f38eba164d);
+            
+        
+
+        circle_marker_08505f703f0a77751a0649d1ddbe93f2.bindPopup(popup_5710f4712624e55b6003b782ba5e4b44)
+        ;
+
+        
+    
+    
+            circle_marker_08505f703f0a77751a0649d1ddbe93f2.bindTooltip(
+                `<div>
+                     Ansenuza | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_884d8672e7eaf665a1ef879e4053bb68 = L.circleMarker(
+                [-41.4987831955, -64.984632737541],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_a9a5a1d774792c55b9844f0e0902fc9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0bef30b954ac8f971c06ea1dbbae383 = $(`<div id="html_f0bef30b954ac8f971c06ea1dbbae383" style="width: 100.0%; height: 100.0%;"><b>Islotes Lobos</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 195383</div>`)[0];
+                popup_a9a5a1d774792c55b9844f0e0902fc9b.setContent(html_f0bef30b954ac8f971c06ea1dbbae383);
+            
+        
+
+        circle_marker_884d8672e7eaf665a1ef879e4053bb68.bindPopup(popup_a9a5a1d774792c55b9844f0e0902fc9b)
+        ;
+
+        
+    
+    
+            circle_marker_884d8672e7eaf665a1ef879e4053bb68.bindTooltip(
+                `<div>
+                     Islotes Lobos | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_492f50c56ab477ad1db2385f946fb5a4 = L.circleMarker(
+                [-27.1803099999999, -58.6906769468687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_182a90283b05098a242aa25d16de1d94);
+        
+    
+        var popup_3ea42c6a20ec36b9565390e9474de7ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b195c9a26035bda498384136e8bae50c = $(`<div id="html_b195c9a26035bda498384136e8bae50c" style="width: 100.0%; height: 100.0%;"><b>Laguna El Palmar</b><br>tipo: Parque<br>jurisdiccion: Nacional<br>area: 55535</div>`)[0];
+                popup_3ea42c6a20ec36b9565390e9474de7ce.setContent(html_b195c9a26035bda498384136e8bae50c);
+            
+        
+
+        circle_marker_492f50c56ab477ad1db2385f946fb5a4.bindPopup(popup_3ea42c6a20ec36b9565390e9474de7ce)
+        ;
+
+        
+    
+    
+            circle_marker_492f50c56ab477ad1db2385f946fb5a4.bindTooltip(
+                `<div>
+                     Laguna El Palmar | Nacional
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
