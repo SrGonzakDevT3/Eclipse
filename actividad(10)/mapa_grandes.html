@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_feaa820569068157fb1f0a8c3c4a544a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_feaa820569068157fb1f0a8c3c4a544a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_feaa820569068157fb1f0a8c3c4a544a = L.map(
+                "map_feaa820569068157fb1f0a8c3c4a544a",
+                {
+                    center: [-38.41, -63.61],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_81d253773e9317a12147e822c33b40b8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_81d253773e9317a12147e822c33b40b8.addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+            var circle_marker_4aa73c6e43c68a5a9199ed577f85da65 = L.circleMarker(
+                [-56.6900008745, -65.6333342510003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_0da835dd2f5f0e19319bedc5faa35dd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58b035762b416257f5a83687c4d233e9 = $(`<div id="html_58b035762b416257f5a83687c4d233e9" style="width: 100.0%; height: 100.0%;">Yaganes (Tamaño: 58234860)</div>`)[0];
+                popup_0da835dd2f5f0e19319bedc5faa35dd1.setContent(html_58b035762b416257f5a83687c4d233e9);
+            
+        
+
+        circle_marker_4aa73c6e43c68a5a9199ed577f85da65.bindPopup(popup_0da835dd2f5f0e19319bedc5faa35dd1)
+        ;
+
+        
+    
+    
+            var circle_marker_de02557daa23df88d3e0e7a5137184e3 = L.circleMarker(
+                [-54.2930702314999, -59.1874354675955],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_c11b01d165bcf1e0124c59c5c34b800b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_567bb25927a3610839c8c32075741e17 = $(`<div id="html_567bb25927a3610839c8c32075741e17" style="width: 100.0%; height: 100.0%;">Namuncurá - Banco Burdwood (Tamaño: 30740644)</div>`)[0];
+                popup_c11b01d165bcf1e0124c59c5c34b800b.setContent(html_567bb25927a3610839c8c32075741e17);
+            
+        
+
+        circle_marker_de02557daa23df88d3e0e7a5137184e3.bindPopup(popup_c11b01d165bcf1e0124c59c5c34b800b)
+        ;
+
+        
+    
+    
+            var circle_marker_624bb4be5706b5a10a45fc65f5d11077 = L.circleMarker(
+                [-44.62006151, -65.6099698159463],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_f86276fdd768be9cf46a510725a61dfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2a6ed54e56e06dfc27e72114e4e9139 = $(`<div id="html_b2a6ed54e56e06dfc27e72114e4e9139" style="width: 100.0%; height: 100.0%;">Patagonia Azul (Tamaño: 30553073)</div>`)[0];
+                popup_f86276fdd768be9cf46a510725a61dfe.setContent(html_b2a6ed54e56e06dfc27e72114e4e9139);
+            
+        
+
+        circle_marker_624bb4be5706b5a10a45fc65f5d11077.bindPopup(popup_f86276fdd768be9cf46a510725a61dfe)
+        ;
+
+        
+    
+    
+            var circle_marker_a855550fa368f498e81da5154553263c = L.circleMarker(
+                [-55.1663856934999, -59.8749999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_17f4539976f78fc90c999664c66052e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca05ca323ccfe233d6d543f5adb6c53d = $(`<div id="html_ca05ca323ccfe233d6d543f5adb6c53d" style="width: 100.0%; height: 100.0%;">Namuncurá - Banco Burdwood II (Tamaño: 25855332)</div>`)[0];
+                popup_17f4539976f78fc90c999664c66052e8.setContent(html_ca05ca323ccfe233d6d543f5adb6c53d);
+            
+        
+
+        circle_marker_a855550fa368f498e81da5154553263c.bindPopup(popup_17f4539976f78fc90c999664c66052e8)
+        ;
+
+        
+    
+    
+            var circle_marker_7685e15a9d8b71d8e93a918c47d1c7c9 = L.circleMarker(
+                [-41.2965775814999, -71.3830954573749],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_e6f2a5e64725923e70ec591fe54110a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_976a0ac288d43ebb0e1c6a60b1856a34 = $(`<div id="html_976a0ac288d43ebb0e1c6a60b1856a34" style="width: 100.0%; height: 100.0%;">Andino Norpatagónica (Tamaño: 23573774)</div>`)[0];
+                popup_e6f2a5e64725923e70ec591fe54110a1.setContent(html_976a0ac288d43ebb0e1c6a60b1856a34);
+            
+        
+
+        circle_marker_7685e15a9d8b71d8e93a918c47d1c7c9.bindPopup(popup_e6f2a5e64725923e70ec591fe54110a1)
+        ;
+
+        
+    
+    
+            var circle_marker_42df941b218881b2f2379177f61f8527 = L.circleMarker(
+                [-42.755007748, -64.269212057579],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_7d21b5eb48dab80841a0373d4035c2e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f0308b9dfdeaf238f30a69caa207a5d = $(`<div id="html_3f0308b9dfdeaf238f30a69caa207a5d" style="width: 100.0%; height: 100.0%;">Península Valdés (Tamaño: 19355132)</div>`)[0];
+                popup_7d21b5eb48dab80841a0373d4035c2e3.setContent(html_3f0308b9dfdeaf238f30a69caa207a5d);
+            
+        
+
+        circle_marker_42df941b218881b2f2379177f61f8527.bindPopup(popup_7d21b5eb48dab80841a0373d4035c2e3)
+        ;
+
+        
+    
+    
+            var circle_marker_9e7f183b03a9d1b72d046783cc28087c = L.circleMarker(
+                [-41.2994695949999, -66.8852152660776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_c34c075d02a3ce206330e4a105cab88a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b629b5644e51f0e709191fe52de69cd7 = $(`<div id="html_b629b5644e51f0e709191fe52de69cd7" style="width: 100.0%; height: 100.0%;">Meseta de Somuncurá (Tamaño: 16158072)</div>`)[0];
+                popup_c34c075d02a3ce206330e4a105cab88a.setContent(html_b629b5644e51f0e709191fe52de69cd7);
+            
+        
+
+        circle_marker_9e7f183b03a9d1b72d046783cc28087c.bindPopup(popup_c34c075d02a3ce206330e4a105cab88a)
+        ;
+
+        
+    
+    
+            var circle_marker_4e550f370d20da6cbc771197a18f6579 = L.circleMarker(
+                [-24.2325359149999, -67.0122627009672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_5122fba23fbc0ad05a7767a14160c140 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70996946a445e1ca21c91d1470d85b63 = $(`<div id="html_70996946a445e1ca21c91d1470d85b63" style="width: 100.0%; height: 100.0%;">Los Andes (Tamaño: 15248404)</div>`)[0];
+                popup_5122fba23fbc0ad05a7767a14160c140.setContent(html_70996946a445e1ca21c91d1470d85b63);
+            
+        
+
+        circle_marker_4e550f370d20da6cbc771197a18f6579.bindPopup(popup_5122fba23fbc0ad05a7767a14160c140)
+        ;
+
+        
+    
+    
+            var circle_marker_2af8bec0ef68c4e5676f6f491956e408 = L.circleMarker(
+                [-23.2052234499999, -64.6868544930527],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_f94822b7b8e72ba0f4adf77064f77025 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98123c93f0a1794051c3a4e428b1f765 = $(`<div id="html_98123c93f0a1794051c3a4e428b1f765" style="width: 100.0%; height: 100.0%;">de las Yungas (Tamaño: 13488705)</div>`)[0];
+                popup_f94822b7b8e72ba0f4adf77064f77025.setContent(html_98123c93f0a1794051c3a4e428b1f765);
+            
+        
+
+        circle_marker_2af8bec0ef68c4e5676f6f491956e408.bindPopup(popup_f94822b7b8e72ba0f4adf77064f77025)
+        ;
+
+        
+    
+    
+            var circle_marker_1907a01aae624ae128e945782313b9ee = L.circleMarker(
+                [-26.3716535459999, -67.2494690376924],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_d087efd16481892df641b3da25d5a73d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c5aa066eb52e198fc17d3b625196519 = $(`<div id="html_2c5aa066eb52e198fc17d3b625196519" style="width: 100.0%; height: 100.0%;">Lagunas Altoandinas y Puneñas de Catamarca (Tamaño: 10823997)</div>`)[0];
+                popup_d087efd16481892df641b3da25d5a73d.setContent(html_2c5aa066eb52e198fc17d3b625196519);
+            
+        
+
+        circle_marker_1907a01aae624ae128e945782313b9ee.bindPopup(popup_d087efd16481892df641b3da25d5a73d)
+        ;
+
+        
+    
+    
+            var circle_marker_01e577c5faed106375a18f820826ac13 = L.circleMarker(
+                [-30.3797784854999, -62.8107670519111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_acdf552b1618ecd5d8290c76a297dea7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1338f7e81fc170c778e1d9fe44cd8bb4 = $(`<div id="html_1338f7e81fc170c778e1d9fe44cd8bb4" style="width: 100.0%; height: 100.0%;">Bañados del Río Dulce y Laguna de Mar Chiquita (Tamaño: 10726532)</div>`)[0];
+                popup_acdf552b1618ecd5d8290c76a297dea7.setContent(html_1338f7e81fc170c778e1d9fe44cd8bb4);
+            
+        
+
+        circle_marker_01e577c5faed106375a18f820826ac13.bindPopup(popup_acdf552b1618ecd5d8290c76a297dea7)
+        ;
+
+        
+    
+    
+            var circle_marker_651fd0bbfaee6c382f02b130fe4bd62c = L.circleMarker(
+                [-28.2748196094999, -57.0526107622004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_5d34c6f7df5988c6c59929b5f1055e70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac7474e856427ad62cfea06f3fbc3b73 = $(`<div id="html_ac7474e856427ad62cfea06f3fbc3b73" style="width: 100.0%; height: 100.0%;">Iberá (Tamaño: 10687229)</div>`)[0];
+                popup_5d34c6f7df5988c6c59929b5f1055e70.setContent(html_ac7474e856427ad62cfea06f3fbc3b73);
+            
+        
+
+        circle_marker_651fd0bbfaee6c382f02b130fe4bd62c.bindPopup(popup_5d34c6f7df5988c6c59929b5f1055e70)
+        ;
+
+        
+    
+    
+            var circle_marker_bc59cac76304122c466d120058b40a51 = L.circleMarker(
+                [-33.043071863, -67.1457262519343],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_8b1b870f1d2b7eab063a7af47c713dd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b77889b8ce7eb047197f23f4122a90bf = $(`<div id="html_b77889b8ce7eb047197f23f4122a90bf" style="width: 100.0%; height: 100.0%;">Lagunas de Guanacache, Desaguadero y del Bebedero (Tamaño: 9646744)</div>`)[0];
+                popup_8b1b870f1d2b7eab063a7af47c713dd7.setContent(html_b77889b8ce7eb047197f23f4122a90bf);
+            
+        
+
+        circle_marker_bc59cac76304122c466d120058b40a51.bindPopup(popup_8b1b870f1d2b7eab063a7af47c713dd7)
+        ;
+
+        
+    
+    
+            var circle_marker_76baec4187210fa0edf076a65dbaa73e = L.circleMarker(
+                [-29.1642303775, -69.4924506887765],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_7ae1460d0813372ecadd567f574c8caa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50473f222cfd83e47407d217d9017eee = $(`<div id="html_50473f222cfd83e47407d217d9017eee" style="width: 100.0%; height: 100.0%;">San Guillermo (Tamaño: 9467763)</div>`)[0];
+                popup_7ae1460d0813372ecadd567f574c8caa.setContent(html_50473f222cfd83e47407d217d9017eee);
+            
+        
+
+        circle_marker_76baec4187210fa0edf076a65dbaa73e.bindPopup(popup_7ae1460d0813372ecadd567f574c8caa)
+        ;
+
+        
+    
+    
+            var circle_marker_741fc02a07a3ae5698961676c3b7a7c9 = L.circleMarker(
+                [-31.13037777, -67.6079896561001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_feaa820569068157fb1f0a8c3c4a544a);
+        
+    
+        var popup_cc5514036c79dc3be2502e04378586ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e01a3ed1e7d60e2e093833593fdaf486 = $(`<div id="html_e01a3ed1e7d60e2e093833593fdaf486" style="width: 100.0%; height: 100.0%;">Valle Fértil (Tamaño: 8039778)</div>`)[0];
+                popup_cc5514036c79dc3be2502e04378586ad.setContent(html_e01a3ed1e7d60e2e093833593fdaf486);
+            
+        
+
+        circle_marker_741fc02a07a3ae5698961676c3b7a7c9.bindPopup(popup_cc5514036c79dc3be2502e04378586ad)
+        ;
+
+        
+    
+</script>
+</html>
